@@ -1,12 +1,16 @@
 import { BrowserRouter as Router } from "react-router-dom";
-import AppRoutes from "./routes/routes";
+import AppRoutes from "./routes/AppRoutes";
+import Header from "./components/layout/Header";
 
 const App = () => {
   return (
     <Router>
       <div className="app">
+        <Header />
         <main>
-          <AppRoutes />
+          <div className="wrapper">
+            <AppRoutes />
+          </div>
         </main>
       </div>
     </Router>
